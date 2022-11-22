@@ -13,10 +13,8 @@ body{
     background: #252525;
     overflow-x: hidden;
     user-select: none !important;
-    height: calc(var(--vh, 1vh) * 100);
+    height: calc(var(--vh, 1vh) * 155);
 }
-
-
 
 ::-webkit-scrollbar{
     display: none;
@@ -65,9 +63,11 @@ body{
     left: 0;
     right: 0;
 
-    
-    width: calc(var(--vw, 1vh) * 100);
-    height: calc(var(--vh, 1vh) * 100);
+    width: auto;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 155);
+
+
     background-repeat: repeat;
     background-size: cover;
     background-image: url("https://j.gifs.com/KYjYkL.gif");
@@ -82,11 +82,9 @@ body{
     left: 0;
     right: 0;
     
-    width: 100vh;
+    width: auto;
     height: 100vh;
-
-    width: calc(var(--vw, 1vh) * 100);
-    height: calc(var(--vh, 1vh) * 100);
+    height: calc(var(--vh, 1vh) * 155);
 
     background-repeat: repeat;
     background-size: cover;
