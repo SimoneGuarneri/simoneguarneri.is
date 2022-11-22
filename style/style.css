@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Parkford;
+    src: url("../font/Parkford.otf");
+}
+  
+
+body{
+    background: #252525;
+    overflow-x: hidden;
+    user-select: none !important;
+}
+
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.path {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: dash 1s linear forwards;
+}
+
+.enter{
+    animation: appear .5s linear forwards;
+    animation-delay: 1s;
+}
+.enter2{
+    animation: appear .5s linear forwards;
+    animation-delay: 2s;
+}
+  
+@keyframes dash {
+    from{
+        stroke-dasharray: 4000;
+        stroke-dashoffset: 4000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        filter: blur(5px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+.paperOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 140vh;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url("https://j.gifs.com/KYjYkL.gif");
+    mix-blend-mode:color-burn;
+    opacity: .2;
+    pointer-events: none;
+}
+.paperOverlay2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 140vh;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url("https://thumbs.gfycat.com/DampPortlyAiredaleterrier-size_restricted.gif");
+    mix-blend-mode: multiply;
+    opacity: .3;
+    pointer-events: none;
+}
